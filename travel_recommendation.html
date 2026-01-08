@@ -11,11 +11,60 @@
             font-family: 'Segoe UI', sans-serif;
         }
 
-        /* Navbar */
+        /* =====================
+        IMPROVED NAVBAR
+        ===================== */
         .navbar {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364) !important;
             padding: 12px 30px;
         }
 
+        .navbar-brand {
+            font-size: 1.3rem;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar-brand i {
+            margin-right: 8px;
+            font-size: 1.4rem;
+        }
+
+        .nav-link {
+            margin-left: 15px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: #0d6efd;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        #searchInput {
+            width: 200px;
+            border-radius: 20px;
+            padding-left: 15px;
+        }
+
+        #searchBtn {
+            border-radius: 20px;
+            padding: 6px 16px;
+        }
+
+        #resetBtn {
+            border-radius: 20px;
+        }
+        
         /* Hero Section */
         #home {
             height: 90vh;
@@ -31,6 +80,15 @@
             justify-content: center;
             text-align: center;
         }
+
+        .team-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
 
         #home h1 {
             font-size: 3.5rem;
@@ -120,14 +178,19 @@
 
         <div class="row text-center">
             <div class="col-md-4">
+                <img src="pic1.jpg" alt="Alex Johnson" class="team-img mb-3">
                 <h5>Alex Johnson</h5>
                 <p>Founder & Travel Expert</p>
             </div>
+
             <div class="col-md-4">
+                <img src="pic2.jpg" alt="Maria Lopez" class="team-img mb-3">
                 <h5>Maria Lopez</h5>
                 <p>Content Strategist</p>
             </div>
+
             <div class="col-md-4">
+                <img src="pic3.jpg" alt="Rahul Mehta" class="team-img mb-3">
                 <h5>Rahul Mehta</h5>
                 <p>Frontend Developer</p>
             </div>
